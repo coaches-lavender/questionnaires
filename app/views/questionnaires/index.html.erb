@@ -1,0 +1,9 @@
+<h1>Questionnaires</h1>
+
+<% @questionnaires.each do |questionnaire| %>
+  <div>
+    <h2><%= questionnaire.name %></h2>
+    <p>Slug: <%= questionnaire.slug %></p>
+    <%= link_to "View", questionnaire_path(questionnaire) %>
+  </div>
+<% end %>
